@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #acbcd7;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="time"],
+        input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        button[type="button"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #031203;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        button[type="button"]:hover {
+            background-color: #090909;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Add your Event Details here!</h2>
+    <form action="addevents.php" method="post">
+        <label for="EventName">Event Name:</label><br>
+        <input type="text" name="EventName"/>
+        <label for="Type">Type:</label><br>
+        <input type="text" name="Type" placeholder="Indoor / Outdoor" required/>
+        <label for="startdate">Start Date:</label><br>
+        <input type="date" name="startdate" placeholder="yyyy/mm/dd" /><br>
+        <label for="enddate">End Date:</label><br>
+        <input type="date" name="enddate"/><br>
+        <label for="eventtime">Event Time:</label><br>
+        <input type="time" name="eventtime"/><br>
+        <button class="btn" name="save" type="submit">Add Event</button>
+        <!--<a href="./register.php"><button type="button">Submit</button></a>-->
+    </form>
+</body>
+
+</html>

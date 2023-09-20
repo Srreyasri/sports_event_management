@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(228, 137, 85) ;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="text"],
+        input[type="roll number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="password"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        button[type="button"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #031203;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        button[type="button"]:hover {
+            background-color: #090909;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Register now for more updates!</h2>
+    <form action="register.php" method="post">
+        <!--<label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department"><br>
+        <label for="phone">Phone no:</label><br>
+        <input type="text" id="phoneno" name="phoneno"><br>
+        <label for="roll-number">Roll Number:</label><br>
+        <input type="text" id="rollno" name="rollno"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="Password">Password:</label><br>
+        <input type="password" id="Password" name="password"><br>
+        <label for="Confirm Password">Confirm Password:</label><br>
+        <input type="password" id="Confirm Password" name="confirmpassword"><br>
+        <button class="btn" name="save" type="submit">Submit</button>-->
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" placeholder="Email / Username" required/>
+        <label for="department">Department:</label><br>
+        <input type="text" name="department"/>
+        <label for="phoneno">Phone no:</label><br>
+        <input type="text" name="phoneno" />
+        <label for="rollno">Roll Number:</label><br>
+        <input type="text" name="rollno"/>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email"/>
+        <label for="Password">Password:</label><br>
+        <input type="password" name="password"/>
+        <label for="Confirm Password">Confirm Password:</label><br>
+        <input type="password" name="confirmpassword"/>
+        <button class="btn" name="save" type="submit">Log in</button>
+        <!--<a href="./register.php"><button type="button">Submit</button></a>-->
+    </form>
+</body>
+
+</html>
+<!--
+    INSERT INTO `registerdb` (`Name`, `Department`, `phoneno`, `rollno`, `email`, `password1`, `password2`) VALUES ('test', 'it', '8499973339', '160121737082', 'THIS@THIS.COM', 'thisonly', 'thisonly');
+-->
